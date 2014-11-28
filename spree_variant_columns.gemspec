@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_variant_columns'
-  s.version     = '2.3.3'
+  s.version     = '2.3.4'
   s.summary     = 'Adds upc, mpc, gtin columns to variant model'
   s.description = 'Adds upc, mpc, gtin columns to variant model'
   s.required_ruby_version = '>= 1.9.3'
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.3.3'
+  s.add_dependency 'spree_core', '~> 2.3.4'
 
   s.add_development_dependency 'capybara', '~> 2.4'
   s.add_development_dependency 'coffee-rails'

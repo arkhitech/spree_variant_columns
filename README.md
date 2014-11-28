@@ -1,7 +1,7 @@
 SpreeVariantColumns
 ===================
 
-Introduction goes here.
+Adds upc, mpc, gtin columns to variant model.
 
 Installation
 ------------
@@ -9,7 +9,7 @@ Installation
 Add spree_variant_columns to your Gemfile:
 
 ```ruby
-gem 'spree_variant_columns'
+gem 'spree_variant_columns', github: 'arkhitech/spree_variant_columns'
 ```
 
 Bundle your dependencies and run the installation generator:
@@ -36,3 +36,4 @@ Simply add this require statement to your spec_helper:
 require 'spree_variant_columns/factories'
 ```
 
+Copyright (c) 2014 Arkhitech, released under the New BSD License
