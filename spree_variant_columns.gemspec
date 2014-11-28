@@ -7,12 +7,12 @@ Gem::Specification.new do |s|
   s.description = 'Adds upc, mpc, gtin columns to variant model'
   s.required_ruby_version = '>= 1.9.3'
 
-  s.author    = 'Arkhitech'
+  s.authors    = ['Arkhitech', 'Hisham Malik']
   s.email     = 'info@arkhitech.com'
-   s.homepage  = 'http://www.arkhitech.com'
+  s.homepage  = 'http://www.arkhitech.com'
 
-  #s.files       = `git ls-files`.split("\n")
-  #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.files       = `git ls-files`.split("\n")
+  s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
 
