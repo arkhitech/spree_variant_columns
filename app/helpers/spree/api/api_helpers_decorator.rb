@@ -1,12 +1,9 @@
-Spree::Api::ApiHelpers.class_eval do
-  def variant_attributes_with_additional_attributes
-    variant_attributes_without_additional_attributes << :upc
-    variant_attributes_without_additional_attributes << :mpc
-    variant_attributes_without_additional_attributes << :gtin
+module Spree
+  module Api
+    module ApiHelpersDecorator
+      ua = Spree::Api::ApiHelpers.class_variable_get(:@@variant_attributes)
+      ua += [:upc, :mpc, :gtin]
+      Spree::Api::ApiHelpers.class_variable_set(:@@variant_attributes, ua)  
+    end
   end
-
-  alias_method :variant_attributes_without_additional_attributes, :variant_attributes
-  alias_method :variant_attributes, :variant_attributes_with_additional_attributes
-  
-#  class_variable_set(:@@variant_attributes, class_variable_get(:@@variant_attributes).push(:upc))
 end
